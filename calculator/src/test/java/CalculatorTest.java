@@ -15,6 +15,8 @@ public class CalculatorTest {
         assertEquals(3, positive_minus,0);
         double multiply = calculator.evaluate(5.0,2.0,"*");
         assertEquals(10.0, multiply,0);
+        double divide = calculator.evaluate(5.0,2.0,"/");
+        assertEquals(2.0, divide,0.5);
         double invalide=calculator.evaluate(1.0,2.0,"#");
         assertEquals(0,invalide,0);
     }
