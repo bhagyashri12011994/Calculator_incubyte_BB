@@ -9,5 +9,7 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         double sum = calculator.evaluate(1.0,2.0,"+");
         assertEquals(3, sum,0);
+        double invalide=calculator.evaluate(1.0,2.0,"*");
+        assertEquals(0,invalide,0);
     }
 }

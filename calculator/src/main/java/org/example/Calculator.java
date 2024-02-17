@@ -8,6 +8,14 @@ public class Calculator {
 
     public double evaluate(double num1,double num2,String op)
     {
-        return 3;
+        double result=0;
+        switch (op)
+        {
+            case "+" : result= num1+num2;
+                        break;
+            default:System.out.println("Enter wrong input");
+                break;
+        }
+        return result;
     }
 }
